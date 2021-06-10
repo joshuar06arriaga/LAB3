@@ -1,0 +1,450 @@
+/*INICIA MAIN CSS*/
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* INICIA VARIABLES */
+:root {
+    --fuente1: 'Dela Gothic One', cursive;
+    --fuente2: 'Lexend', sans-serif;
+    --verde: rgb(3, 102, 53);
+    --blanco: rgb(255, 255, 255);
+    --negro: rgb(0, 0, 0);
+    --gris: rgb(206, 206, 206);
+    --pastel: rgb(40, 187, 89);
+}
+/* FIN VARIABLES */
+
+/* INICIA MENU DE NAVEGACIÓN */
+.espacio__1 {
+    width: 100%;
+    height: 10px;
+    background-color: var(--verde);
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: var(--gris);
+    display: flex;
+    justify-content: space-between;
+}
+
+.header img {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 75px;
+    height: 75px;
+}
+
+.header__menu{
+    list-style: none;
+    display: flex;
+}
+
+.header__menu__container {
+    margin-right: 20px;
+}
+
+.header__menu li {
+    margin: 15px;
+}
+
+.header__menu a {
+    color: var(--celeste);
+    text-decoration: none;
+    font-size: 15px;
+    font-family: var(--fuente2);
+}
+
+.header__menu a:hover {
+    color: var(--blanco);
+    transition: 400ms;
+    
+}
+/* FINALIZA MENU DE NAVEGACIÓN */
+
+
+/* TARJETAS */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.contenedor img {
+    margin-left: 35px;
+    width: 275px;
+    height: 150px;
+}
+
+.contenedor h3 {
+    text-align: center;
+    font-size: 30px;
+    font-family: var(--fuente1);
+}
+
+.contenedor p {
+    margin-top: -10px;
+    text-align: justify;
+    font-size: 16px;
+    font-family: var(--fuente2);
+}
+
+.contenedor a {
+    margin-top: 0px;
+    text-align: left;
+    font-size: 16px;
+    font-family: var(--fuente2);
+    color: var(--negro);
+    text-decoration: none;
+}
+
+.sabermas a {
+    font-size: 16px;
+    font-family: var(--fuente2);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.contenedor a:hover {
+    color: rgb(0, 0, 0);
+    background-color: white;
+    transition: 650ms;
+}   
+
+.tarjeta__bebidas {
+    margin-top: -85px;
+    width: 350px;
+    height: 525px;
+    background-color: var(--blanco);
+    border-radius: 25px;
+    padding: 50px;
+    border: 10px solid rgb(112, 112, 112);
+    margin-right: 20px;
+    cursor: pointer;
+    
+}
+
+.tarjeta__bebidas:hover {
+    background-color: var(--pastel);
+    border: 10px solid var(--negro);
+    transition: 540ms;
+}
+
+.tarjeta__alimentos {
+    margin-top: -85px;
+    width: 350px;
+    height: 525px;
+    background-color: var(--blanco);
+    border-radius: 25px;
+    padding: 50px;
+    border: 10px solid rgb(112, 112, 112);
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.tarjeta__alimentos:hover {
+    background-color: var(--pastel);
+    border: 10px solid var(--negro);
+    transition: 540ms;
+}
+/* FIN DE LAS TARJETAS */
+
+/* PAGINA CONOCENOS */
+.conocenos {
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: left;
+}
+
+.info__conocenos h2 {
+    color: var(--verde);
+    font-family: var(--fuente1);
+    font-size: 35px;
+    margin-left: 25px;
+}
+
+.info__conocenos p {
+    color: negro;
+    font-family: var(--fuente2);
+    font-size: 25px;
+    margin-left: 30px;
+}
+/* FINALIZA PAGINA CONOCENOS */
+
+/* PAGINA DE PRODUCTO */
+.info p {
+    text-align: center;
+    font-size: 22px;
+    font-family: var(--fuente1);
+}
+
+.descripcion1 {
+    background-color: var(--pastel);
+    width: 100%;
+    height: 260px;
+    display: flex;
+    justify-content: left;
+}
+
+.bebidas__d h2{
+    font-family: var(--fuente1);
+    color: var(--blanco);
+    margin-left: 15px;
+    font-size: 30px;
+}
+
+.imgbebidas {
+    margin: 30px;
+    box-shadow: 0 0 0 2px var(--gris),
+                0 5px 25px;
+}
+
+.bebidas__d p {
+    font-family: var(--fuente2);
+    color: black;
+    margin: 15px;
+    font-size: 20px;
+}
+
+.descripcion2 {
+    background-color: var(--gris);
+    width: 100%;
+    height: 260px;
+    display: flex;
+    justify-content: right;
+}
+
+.alimentos__d h2{
+    font-family: var(--fuente1);
+    color: var(--negro);
+    margin-left: 670px;
+    font-size: 30px;
+}
+
+.imgalimentos {
+    margin: 30px;
+    box-shadow: 0 0 0 2px var(--gris),
+                0 5px 25px;
+}
+
+.alimentos__d p {
+    font-family: var(--fuente2);
+    color: black;
+    margin-right: 30px;
+    font-size: 20px;
+    text-align: right;
+}
+/* FINALIZA PAGINA DE PRODUCTO */
+
+/* PAGINA DE CONTACTO */
+
+.contacto {
+    margin-left: 450px;
+    margin-top: 50px;
+    background-color: rgb(112, 231, 128);
+    width: 525px;
+    justify-content: center;
+}
+
+.contacto input {
+    border: 5px solid var(--verde);
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    font-family: var(--fuente2);
+    border-radius: 5px;
+    font-size: 25px;
+    width: 500px;
+}
+
+.boton {
+    text-decoration: none;
+    color: var(--negro);
+    font-size: 20px;
+    font-family: var(--fuente2);  
+}
+
+.boton:hover {
+    background-color: var(--verde);
+    color: var(--blanco);
+    border: 5px solid var(--gris);
+}
+
+.contacto ::placeholder{
+    font-family: var(--fuente2);
+}
+
+.red1 {
+    display: flex;
+    justify-content: left;
+    margin-left: 500px;
+    margin-top: 15px;
+}
+
+.facebook__t a{
+    margin-left: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: var(--fuente2);
+    color: var(--verde);
+}
+
+.red2 {
+    display: flex;
+    justify-content: left;
+    margin-left: 500px;
+    margin-top: 15px;
+}
+
+.instagram__t a{
+    margin-left: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: var(--fuente2);
+    color: var(--verde);
+}
+
+.red3 {
+    display: flex;
+    justify-content: left;
+    margin-left: 500px;
+    margin-top: 15px;
+}
+
+.twitter__t a{
+    margin-left: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: var(--fuente2);
+    color: var(--verde);
+}
+/* FINALIZA PAGINA DE CONTACTO */
+
+/* BOTONES */
+.main__container__b1 button {
+    background-color: var(--verde);
+    width: 250px; /*ancho*/
+    margin-top: 15px; /*espacio de arriba a abajo*/
+    margin-left: 20%;
+    border: 0px; /*borde*/
+    border-radius: 50px; /*curva del borde*/
+    height: 55px; /*largo*/
+    cursor: pointer; /*modo de cursor*/
+    outline: none; /*linea de borde*/ 
+}
+
+.main__container__b1 button a {
+    text-decoration: none; /*subrayado o algo más*/
+    color: var(--blanco); /*color*/
+    font-size: 25px; /*tamaño de la letra*/
+    font-family: var(--fuente2); /*tipo de letra*/
+}
+
+.main__buttonb1:hover {
+    background-color: var(--pastel); /*color de fondo nuevo*/
+    width:  250px; /*ancho nuevo*/
+    margin-left: 20%;
+    transition: 500ms;
+}
+
+.main__buttonb1 a:hover {
+    color: var(--verde); /*nuevo color*/
+}
+/* FIN DE LOS BOTONES */
+
+/* INCIO DE MENCIONES */
+.title__menciones {
+    font-size: 35px;
+    font-family: var(--fuente1);
+    color: var(--negro);
+    text-align: center;
+    border: 8px black groove;
+    background-color: var(--pastel);
+}
+
+.portafoliomenciones {
+    background-color: var(--gris);
+    width: 100%;
+    height: 490px;
+    display: flex;
+    justify-content: left;
+    margin-top: -25px;
+}
+
+.imgpersona img {
+    margin-left: 25px;
+    margin-right: 20px;
+    width: 250px;
+    height: 230px;
+    box-shadow: 0 0 6px 0 var(--negro);
+}
+
+.imgpersonas h5 {
+    margin-left: 18px;
+    margin-right: 15%;
+    color: var(--negro);
+    font-family: var(--fuente2);
+    text-align: center;
+    font-size: 22px;
+}
+
+.imgpersonas p {
+    margin-left: 20px;
+    margin-right: 10%;
+    color: var(--negro);
+    font-family: var(--fuente2);
+    text-align: left;
+    font-size: 18px;
+}
+
+.title__cafe {
+    font-size: 35px;
+    font-family: var(--fuente1);
+    color: var(--verde);
+    text-align: center;
+}
+
+.portafoliocafe {
+    width: 100%;
+    height: 490px;
+    display: flex;
+    justify-content: center;
+    margin-top: -25px;
+}
+
+.imgcafe img {
+    margin-left: 100px;
+    margin-right: 20px;
+}
+
+.imgcafe1 {
+    margin-left: 200px;
+}
+
+.imgcafes h5 {
+    margin-left: 18px;
+    margin-right: 15%;
+    color: var(--negro);
+    font-family: var(--fuente2);
+    text-align: center;
+    font-size: 22px;
+}
+
+.imgcafes p {
+    margin-left: 20px;
+    margin-right: 10%;
+    color: var(--negro);
+    font-family: var(--fuente2);
+    text-align: left;
+    font-size: 18px;
+}
